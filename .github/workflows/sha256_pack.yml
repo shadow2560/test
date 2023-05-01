@@ -12,7 +12,7 @@ jobs:
     name: sha256
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Create zip sha256
         run: curl -sL "${{ github.server_url }}/${{ github.repository }}/archive/refs/heads/main.zip" | shasum -a 256 | cut -d " " -f 1 > sha256_pack.txt
       - name: push changes
