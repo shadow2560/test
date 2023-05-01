@@ -3,10 +3,10 @@ on:
   push:
     branches:
       - main
-  paths-ignore:
-    - '/sha256**.txt'
-    - '/readme.md'
-    - '/nettoyage_sd.bat'
+    paths-ignore:
+      - '/sha256**.txt'
+      - '/readme.md'
+      - '/nettoyage_sd.bat'
 jobs:
   sha256:
     name: sha256
