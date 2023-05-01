@@ -1,10 +1,10 @@
-name: make_sha256_pack
+name: make_sha256_app
 on:
   push:
     branches:
       - main
     paths:
-      'switch/AIO_LS_pack_Updater/AIO_LS_pack_Updater.nro'
+      - 'switch/AIO_LS_pack_Updater/AIO_LS_pack_Updater.nro'
 jobs:
   sha256:
     name: sha256
